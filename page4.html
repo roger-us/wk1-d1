@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Third Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container"> <!--Starting Container-->
+        <header>My Website Brand</header>
+        <nav>
+            <ul> <!--My menu bar-->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">About</a></li>
+                <li><a href="page4.html">About</a></li>
+                <li><a href="page3.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main> <!--Starting the posts-->
+        <h1>My Third heading</h1>
+        <p>My Third paragraph.</p>
+                <!--Create a Form-->
+        <form actio="signup" method="post">
+            <fieldset>
+                <legend>Use Personal Information</legend>
+                <label>Enter the Full namer</label>
+                <input type="text" name="name">
+                <label>Enter your Email</label>
+                <input type="email" name="email">
+                <label>Enter your Phone</label>
+                <input type="tel" name="phone">
+                <label>Select your gender</label>
+                <input type="radio" name="gender" value="male"/>Male
+                <input type="radio" name="gender" value="female"/>Female
+                <label>How should we contact you</label>
+                <select>
+                    <option>Email</option>
+                    <option>Phone</option>
+                </select><br>
+                <br>
+                <label>Tell us the reason for your visit today:</label>
+                <textarea rows="5" cols="30"></textarea>
+                <input type="submit" value="signup">
+            </fieldset>
+        </form>
+        </main>
+        <br>
+        <footer>&COPY; Copyright 2022</footer>
+        </div>
+</body>
+</html>

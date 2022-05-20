@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Third Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container"> <!--Starting Container-->
+        <header>My Website Brand</header>
+        <nav>
+            <ul> <!--My menu bar-->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">About</a></li>
+                <li><a href="page4.html">About</a></li>
+                <li><a href="page3.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main> <!--Starting the posts-->
+            <h1>My Fourth heading</h1>
+            <p>My Fourth paragraph.</p>
+
+            <ul id="album">
+                <!--<li id="photo"><img src="images/winterland1.jpg"></li>
+                <li id="photo"><img src="images/winterland2.jpg"></li>
+                <li id="photo"><img src="images/winterland3.jpg"></li>
+                <li id="photo"><img src="images/winterland4.jpg"></li>
+                <li id="photo"><img src="images/winterland5.jpg"></li>
+                <li id="photo"><img src="images/winterland6.jpg"></li>-->
+                </ul>
+        
+        </main>
+        
+        <footer>&COPY; Copyright 2022</footer>
+    </div>
+
+    <!-- Javascript for gallery-->
+    <script>
+        var photos = []; //empty array to store image element
+        var fileNames = []; //empty array to store images filenames
+        var imageList = []; //Empty array to store html list that conatain an image
+        var image = []; //empty variable to store assembled image list codes
+        var openList = '<li id="photo">'; //Store the open list tag
+        var closeList = "</li>"; //store the close list tag
+
+        //create a logo to create 6 images starting with index of 0
+
+    for (var i=0; i<6; i++){
+        fileNames.push("winterland"+(i+1));
+        photos.push('<img src="images/'+fileNames[i]+'.jpg">');
+        image = openList + photos[i] + closeList;
+        imageList.push(image);
+    }
+    //Display all six images codes, stored images in the array
+    document.getElementById("album").innerHTML = imageList;
+    </script>
+</body>
+</html>
